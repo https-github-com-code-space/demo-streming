@@ -13,7 +13,7 @@ const Banner = () => {
     }}>
       <div className="homepage">
         <div className="textContainer">
-          <h1>
+          <h1 className="text-[#4b69bd]">
           Get your way home worldwide
           </h1>
           <h2>A small river named Duden flows by their place and supplies it with the necessary regelialia.</h2>
