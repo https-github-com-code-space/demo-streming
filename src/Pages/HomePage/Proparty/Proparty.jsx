@@ -28,7 +28,7 @@ const Proparty = () => {
         {
             id:3,
             image: image3,
-            condition: 'sell',
+            condition: 'Sell',
             name:'Compex Subdivision',
             price: 200,
             location: 'Dhaka - Bangladesh'
@@ -44,7 +44,7 @@ const Proparty = () => {
         {
             id:5,
             image: image5,
-            condition: 'sell',
+            condition: 'Sell',
             name:'Compex Subdivision',
             price: 200,
             location: 'Dhaka - Bangladesh'
@@ -65,7 +65,12 @@ const Proparty = () => {
                 <img src={proparty.image} className='rounded-lg w-100% h-[400px]' alt="" />
                 </div>
                 <div className=''>
-                  <p className=' w-14 h-14 bg-[#4b69bd] flex justify-center items-center font-bold text-lg translate-y-[-25px] translate-x-[15px]  rounded-full text-white'><span>{proparty.condition}</span></p>
+                  {
+                    proparty.condition === 'Sell' ?                
+                    <p className=' w-14 h-14 bg-[#4b69bd] flex justify-center items-center font-bold text-lg translate-y-[-25px] translate-x-[15px]  rounded-full text-white'><span>{proparty.condition}</span></p>
+                    :
+                    <p className=' w-14 h-14 bg-[#E88941] flex justify-center items-center font-bold text-lg translate-y-[-25px] translate-x-[15px]  rounded-full text-white'><span>{proparty.condition}</span></p>
+                  }
                   <div className='flex justify-between items-center'>
                     <h2 className='text-2xl font-bold'>{proparty.name}</h2>
                     <p className='text-xl text-[#4b69bd] font-bold'>${proparty.price}</p>

@@ -49,19 +49,19 @@ const VideoPlayer = () => {
     };
 
   return (
-    <div className='w-[95%] md:w-[90%] mx-auto mt-20'>
+    <div className='w-[95%] md:w-[90%] mx-auto mt-28'>
       <h1 className='mb-20 text-4xl text-[#4b69bd] font-bold text-center'>Video Gallery</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
         {videoData.map((video) => (
-          <div key={video.id} className="video-item mx-auto" onClick={() => openModal(video)}>
-            <img src={video.img} />
-            <h2>{video.title}</h2>
+          <div key={video.id} className=" mx-auto" onClick={() => openModal(video)}>
+            <img className='cursor-pointer w-full' src={video.img} />
+            <h2 className='text-xl text-[#4b69bd] font-bold mt-2'>{video.title}</h2>
           </div>
         ))}
       </div>
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
         <button className='ml-auto block text-3xl mb-10' onClick={closeModal}><MdClose></MdClose></button>
-        <ReactPlayer url={currentVideo?.url} controls volume  width='100%' height='100%' />
+        <ReactPlayer url={currentVideo?.url} controls volume  width='100%' height='70vh' />
       </Modal>
     </div>
   )
