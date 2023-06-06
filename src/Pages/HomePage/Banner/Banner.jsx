@@ -8,7 +8,7 @@ const Banner = () => {
       <div className="homepage">
         <div className="textContainer">
           <h1>
-            Welcome to <span style={{ color: "#03B97C" }}>EDU-Care</span>
+            Welcome to <span style={{ color: "#03B97C" }}>Company</span>
           </h1>
           <h2>Learn New Languages and Move Forward</h2>
           <p>
