@@ -3,7 +3,7 @@
 const TopNav = () => {
   return (
 <div>
-      <nav className="bg-white text-[#03B97C] hidden md:block py-3">
+      <nav className="bg-white text-[#03B97C] hidden md:block py-1">
         <div className="md:px-16 lg:px-20">
           <div className="flex justify-between align-center" >
             <ul className="flex space-x-3">
