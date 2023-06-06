@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className=" sticky top-0 bg-[#4b69bd] text-white py-4 select-none">
+    <div className=" sticky top-0 z-50 bg-[#4b69bd] text-white py-4 select-none">
       <nav className="w-[95%] md:w-[90%] mx-auto flex justify-between items-center">
         {/* logo */}
         <div className="grow">
