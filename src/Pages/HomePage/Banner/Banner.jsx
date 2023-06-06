@@ -1,27 +1,22 @@
-import { Link } from "react-router-dom";
-import image from "./../../../assets/banner-img.png";
+
+import image from "./../../../assets/homebg.webp";
 import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className="bg-[#7bdcb533]">
+    <div className="bg-[#7bdcb533]"
+    style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(${image})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+    }}>
       <div className="homepage">
         <div className="textContainer">
           <h1>
-            Welcome to <span style={{ color: "#03B97C" }}>Company</span>
+          Get your way home worldwide
           </h1>
-          <h2>Learn New Languages and Move Forward</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation
-          </p>
-          <Link className="" to="/">
-            <button>Go To Course</button>
-          </Link>
-        </div>
-        <div>
-          <img src={image} alt="" />
+          <h2>A small river named Duden flows by their place and supplies it with the necessary regelialia.</h2>
         </div>
       </div>
     </div>
