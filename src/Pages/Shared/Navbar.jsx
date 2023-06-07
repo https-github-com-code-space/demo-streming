@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className=" sticky top-0 z-50 bg-[#4b69bd] text-white py-4 select-none">
+    <div className=" sticky top-0 z-50 bg-[#4b69bd] text-white py-3 select-none">
       <nav className="w-[95%] md:w-[90%] mx-auto flex justify-between items-center">
         {/* logo */}
         <div className="grow">
@@ -20,7 +20,7 @@ const Navbar = () => {
               : "hidden lg:block grow"
           }
         >
-          <div className="absolute top-[50px] left-0 w-full lg:static lg:flex justify-between items-center">
+          <div className="absolute top-[45px] left-0 w-full lg:static lg:flex justify-between items-center">
             <div>
               <ul className="lg:flex justify-between items-center bg-[#4b69bd] font-bold text-white">
                 <li className="px-5 py-2 me-2">
